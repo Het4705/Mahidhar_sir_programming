@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "linked_list.h": "c",
+        "stdio.h": "c",
+        "corecrt_stdio_config.h": "c"
+    }
+}

@@ -1,0 +1,53 @@
+        def fun( a,b ) ---> parameters
+
+        fun(20,30) --> Arguments 
+            
+---------------------------------------------------------------------------
+        Name of function acts as a base address for it
+
+        void fun(){
+            printf("hii");
+        }
+
+        void main()
+        {
+        void (*fn_ptr)()=&fun   ==  void (*fn_ptr)()=fun  
+        }
+---------------------------------------------------------------------------
+
+       Another meaning of void is it's generic:
+          
+        example :
+                in malloc if we do: 
+                     int *ptr=malloc(sizeof(int)*4)  then it will return generic ptr (void)
+                which can allocate any data type in  allocated space of sizeof(int)*4 bytes
+                
+----------------------------------------------------------------------------
+
+       if we do 
+           def fun():
+             print("jay shri ram")
+    
+           print(fun()) ---> output :   jay shri ram 
+                                        None
+
+      This is because default return type of python is None
+
+      def multiValue():
+         print("Om Namah Shivay")
+         return 1,"OM",True,'5',[3,2,4 ,(223,82,"232hehe"),929]  ----> returns a tuple containing all this value
+      
+      print(multiValue()) 
+
+      *******************
+      output:  (1, 'OM', True, '5', [3, 2, 4, (223, 82, '232hehe'), 929])
+        
+      because by default data-structure  in py is Tuple and data-type is String 
+
+      --------------------------------------------------------------------------------------------------
+
+      Loops are always better than Recursion 
+      as Recursion takes more memory and executes the whole code for different calls
+
+      however its important for DSA Implementation as it helps a lot in trace backing the code
+

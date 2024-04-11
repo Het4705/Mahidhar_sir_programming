@@ -1,0 +1,14 @@
+In Python, the == operator checks for equality between two objects. However, when comparing 2 and int, they are two different types of objects: 2 is an integer literal, while int is a type itself.
+
+Here's what's happening:
+
+2 is an integer literal representing the number 2.
+int is the built-in integer type in Python.
+When you compare them using ==, Python checks if the two objects are the same, which they are not, hence the result is False.
+
+If you want to compare whether 2 is an instance of the int type, you should use the isinstance() function:
+
+python
+Copy code
+print(isinstance(2, int))  # Output: True
+This will correctly output True, indicating that 2 is indeed an instance of the int type.

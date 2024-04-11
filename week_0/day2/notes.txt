@@ -1,0 +1,14 @@
+-- In python memory can be understand as Union ( Shared memory  from C)
+
+-- Dynamic Allocation will never try to allocate mem randomly it will first check fro sequential Allocation 
+   and if it doesn't find contiguous memory then it may go for random allocation
+
+-- that's why DMA (Dynamic memory Allocation) must have  a pointer
+
+-- Default datatype is string  and default data structure is tuple
+
+-- Double Quotes(" ") signifies that its collection of various  single Quotes (' ')
+   while collection of various Double Quotes can be done using Wrapping them in 
+   Triple Strings (''' ''')
+
+-- We can typecast any datatype into String and String to any Datatype like : s <-> dictionary, s <-> int , s <-> tuple etc

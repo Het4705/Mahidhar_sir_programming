@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Flow Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .entity {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .process {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="entity">
+            <h3>Customer</h3>
+            <div class="arrow-down"></div>
+            <p>- Registers</p>
+            <p>- Searches for websites</p>
+        </div>
+        <div class="entity">
+            <h3>Shopkeeper/Smallcap Company</h3>
+            <div class="arrow-down"></div>
+            <p>- Registers</p>
+            <p>- Manages website content</p>
+        </div>
+        <div class="process">
+            <h3>Web App</h3>
+            <div class="arrow-down"></div>
+            <p>- Provides website information</p>
+            <p>- Provides website management</p>
+            <p>- Generates analytics</p>
+        </div>
+        <div class="process">
+            <h3>Database Management</h3>
+            <div class="arrow-down"></div>
+            <p>- Manages website content</p>
+            <p>- Provides database management</p>
+        </div>
+        <div class="process">
+            <h3>Analytics Module</h3>
+            <div class="arrow-down"></div>
+            <p>- Provides analytics</p>
+        </div>
+        <div class="process">
+            <h3>Product Information</h3>
+            <div class="arrow-down"></div>
+            <p>- Manages products</p>
+            <p>- Provides product details</p>
+        </div>
+        <div class="process">
+            <h3>Company Information</h3>
+            <div class="arrow-down"></div>
+            <p>- Manages company information</p>
+            <p>- Provides company details</p>
+        </div>
+    </div>
+</body>
+</html>

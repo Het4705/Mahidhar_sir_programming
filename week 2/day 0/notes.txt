@@ -1,0 +1,72 @@
+why no space is allocated for methods of class
+ChatGPT
+In C++, when you create objects of a class, the memory is allocated for the data members of that class, not for the member functions. Member functions (methods) are shared among all instances of the class and don't contribute to the size of each object.
+
+Member functions are essentially code that operates on the data members of an object. They are part of the class definition and are shared among all instances of that class. When you create multiple objects of a class, each object has its own copy of the data members, but they all share the same set of member functions.
+
+In your example:
+
+cpp
+Copy code
+class C {
+public:
+    void prints() {
+        printf("hii\n");
+        int a;
+    }
+
+    void print1() {
+        printf("hii\n");
+        int a;
+    }
+
+    void print2() {
+        printf("hii\n");
+        int a;
+    }
+
+    void print3() {
+        printf("hii\n");
+        int a;
+    }
+};
+The methods prints(), print1(), print2(), and print3() are shared among all instances of the class C. They do not have any associated memory in each object; instead, the code for these functions is stored in a single location in memory, and all instances of the class refer to that code when the functions are called.
+
+So, in short, the memory allocated for objects of a class is determined by the size of their data members, and member functions do not contribute to the size of each object.
+
+User
+so where does functions are stored
+ChatGPT
+In C++, the code for member functions (methods) of a class is typically stored in a code segment of the program's memory. The code segment is a region of memory that holds the executable code of the program.
+
+When you define a class and its member functions, the compiler generates machine code for those functions. This code is stored in the program's executable file, and when the program runs, the operating system loads this code into memory. Each instance of the class shares the same set of member functions, and the code for these functions is not duplicated for each object.
+
+The specific details of where the code is stored can depend on the compiler, the platform, and the type of executable (e.g., executable file, dynamic-link library, etc.). In general, the code segment of the program's memory is read-only to ensure that the instructions are not modified during program execution.
+
+It's important to note that the data members of a class, on the other hand, are stored in the memory allocated for each object. Each object has its own copy of the data members, and the memory for data members is distinct for each instance of the class.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In C++, the `sizeof` operator provides the size in bytes of an object or a type. It doesn't create an object or allocate memory; it simply returns the size that an object of that type would occupy in memory. In your code:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int a;
+};
+
+int main() {
+    cout << sizeof(A);
+    return 0;
+}
+```
+
+Here, `sizeof(A)` is used to determine the size, in bytes, that an object of type `A` would occupy in memory. The `sizeof` operator does not create an actual object of class `A`. It's a compile-time operation that provides information about the size of the object based on its data members and any padding or alignment requirements.
+
+In this specific case, the size of the class `A` is determined by its data member `int a`. On most systems, an `int` takes 4 bytes. Therefore, the output of `sizeof(A)` will typically be 4, indicating that an object of class `A` would occupy 4 bytes in memory.
+
+To clarify, using `sizeof` does not create an object or allocate memory at runtime. It's a compile-time operation that helps developers understand the memory requirements of a type.

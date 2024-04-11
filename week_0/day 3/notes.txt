@@ -1,0 +1,42 @@
+            In Python if we do
+         
+                    -23%7  gives 5
+                    :
+                    :
+                    IT USE FORMULA like : dividend - floor_value( dividend/divisor)*divisor
+
+            EX:  -23-(-23//7*7)
+                    -23-(-4*7)
+                    -23+28 = 5
+
+            If (23%-7) then gives -5
+
+            Therefore , if dividend is negative then ans is positive and if divisor is negative then ans is positive
+
+
+****************************************************************
+
+            if we do a==b then it checks bitwise 
+
+            practical implementation of XOR is parallel switch like we have in house stairs one at floor 0 and other at floor 1
+    
+                    floor 0  floor 1  Bulb
+                    ------------------------
+                    ON  |  ON   |  OFF
+                    ON  |  OFF  |  ON
+                    OFF |  ON   |  ON
+                    OFF |  OFF  |  OFF
+
+
+*******************************************************************
+
+Right binary shift using (Angular braces [>>])
+    
+    ex= 10 : 1010
+    
+    1010| 10
+    0101| 5
+    0010| 2
+    0001| 1
+    0000| 0
+

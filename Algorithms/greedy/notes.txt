@@ -1,0 +1,30 @@
+Greedy :          Helps in Optimization 
+                         or
+         Requires to get Optimal Solution from feasible Solution
+           by taking the current best (Local Optimum)
+
+Selects the current best without considering future best Option 
+and starts solving
+               
+               optimization Problems
+                     |
+                     |
+                   /   \
+Used in Maximization / Minimization Problem 
+         |                   |
+         |___________________|  
+                   |
+             ------------------
+            |                  |
+      Feasible sol^n       optimized sol^n    
+     (Possible sol^n )       (BEST sol^n )
+
+
+example: Prims and Kruskal Algo:
+          -- here they try to choose the 
+               minimum edge for making 
+
+However Greedy Doesn't guarantee Optimum solution all the time:
+
+
+

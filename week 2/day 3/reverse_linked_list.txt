@@ -1,0 +1,6 @@
+to reverse a singly linked_list i will travel once and store data in stack
+now i will traverse again and replace 
+the data from stack with current node and do pop()
+
+
+

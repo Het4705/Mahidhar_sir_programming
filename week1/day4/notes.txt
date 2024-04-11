@@ -1,0 +1,3 @@
+to compare list1 and 
+list2 we should 
+use == as 'is' operator failes

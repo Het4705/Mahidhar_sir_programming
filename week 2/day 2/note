@@ -1,0 +1,32 @@
+-- Algo is step by step process to solve a problem which is user understandable
+-- Best Case : Minimum Time (Atleast) Taken by Algo  to Solve a problem/ to give output
+-- Worst Case: Max Time (Atmost) Time Taken by Algo To Solve a problem/ to give output
+
+
+
+-- Space Complexity: Amount of Size an Algorithm needs in its life Cycle
+
+    --- Fixed Part : Fixed Space require to store certain variables 
+                     and constants or programs
+
+    --- Variable Part : Dynamic Memory require during process life cycle 
+                        like: stack,recursion, heap space etc
+
+
+-- Time Complexities are Approximation
+
+-- Common Errors: 
+        -Input and Output Format
+        -Time Limit Constrains
+        -RunTime Error
+        -CompileTime Error
+        -Wrong Answers
+        -Int OverFLow
+
+-- if we write O(1) then it indicates that output of program will not be dependent on input
+   set it will be constant
+
+-- log n time complexity comes when input is reduced in linear time
+-- QuasiLinear = O(nlogn)
+   
+--- USE DRY = Don't Repeat Yourself
